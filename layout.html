@@ -16,56 +16,33 @@
 </head>
 <body>
     <!-- 導覽列 -->
-    <header class="header d-flex p-2 p-lg-3 border-bottom align-items-center">
-        <div class="logo px-lg-3"><a href="#"><img src="images/logo.png" class="img-fluid" alt=""></a></div>        
-        <ul class="nav nav-pills ms-auto me-5 text-dark d-none d-lg-flex">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">服務介紹</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">設計作品</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">領養專區</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
-            </li>
-        </ul>        
-        <div class="fs-3 ms-auto d-block d-lg-none">
-            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <i class="bi bi-list text-dark"></i>
-            </a>
-        </div>  
-        <!-- 手機板導覽列 -->
-        <div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">            
-                <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">服務介紹</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">設計作品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">領養專區</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
-                    </li>
-                </ul>
-            </div>
-        </div>      
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-3" href="#"><img src="images/logo.png" class="img-fluid" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-lg-5 text-center text-lg-start">
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">服務介紹</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">設計作品</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">領養專區</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
+                </li>         
+            </ul>            
+          </div>
+        </div>
+    </nav>    
     <section>
         <!-- 主要內容區 -->
         <br><br><br><br><br><br><br><br><br><br>

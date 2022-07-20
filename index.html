@@ -16,69 +16,52 @@
 </head>
 <body>
     <!-- 導覽列 -->
-    <header class="header d-flex p-2 p-lg-3 border-bottom align-items-center">
-        <div class="logo px-lg-3"><a href="#"><img src="images/logo.png" class="img-fluid" alt=""></a></div>        
-        <ul class="nav nav-pills ms-auto me-5 text-dark d-none d-lg-flex">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">服務介紹</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">設計作品</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">領養專區</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
-            </li>
-        </ul>        
-        <div class="fs-3 ms-auto d-block d-lg-none">
-            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <i class="bi bi-list text-dark"></i>
-            </a>
-        </div>  
-        <!-- 手機板導覽列 -->
-        <div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">            
-                <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">服務介紹</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">設計作品</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">領養專區</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
-                    </li>
-                </ul>
-            </div>
-        </div>      
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-3" href="#"><img src="images/logo.png" class="img-fluid" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-lg-5 text-center text-lg-start">
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">服務介紹</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">設計作品</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="#">領養專區</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
+                </li>
+            </ul>            
+          </div>
+        </div>
+    </nav>    
     <section>
-        <!-- 主要內容區 -->
-        <div class="banner"></div>
+        <picture class="position-relative">
+            <source media="(min-width: 576px)" srcset="images/home.png">
+            <img src="images/home_mobile.png" class="img-fluid w-100" alt="">
+            <p class="font-kalam position-absolute top-0 start-50 translate-middle display-3 text-sw-2 text-sc-white text-green d-none d-lg-block">Full of fur. Full of love</p>
+        </picture>
+    </section>
+    <section>
+        <!-- 主要內容區 -->      
         <div class="row justify-content-center m-0 m-lg-5 g-4 flex-lg-row-reverse">            
             <div class="col-lg-5 d-flex flex-column justify-content-center">
                 <h3 class="font-kalam text-yellowtwo text-center text-lg-start">Service</h3>
                 <h3 class="fs-1 fw-bold text-center text-lg-start">您出錢 我出力 一起助浪浪</h3>
-                <p class="lh-lg text-blacktwo text-wrap">我們是一群貓奴才狗奴才， 
-                    希望能透過自己小小的力量幫助浪貓浪狗們， 
-                    可我們沒什麼錢錢，但我們喜歡畫畫、喜愛貓狗， 
-                    於是想到個兩全其美的好法子！ 
-                    如果您購買我們的寵物似顏繪服務， 
-                    我們將會把設計費100%全數捐給浪浪們！ 
+                <p class="lh-lg text-blacktwo text-wrap">我們是一群貓奴才狗奴才，<br> 
+                    希望能透過自己小小的力量幫助浪貓浪狗們， <br>
+                    可我們沒什麼錢錢，但我們喜歡畫畫、喜愛貓狗， <br>
+                    於是想到個兩全其美的好法子！ <br>
+                    如果您購買我們的寵物似顏繪服務， <br>
+                    我們將會把設計費100%全數捐給浪浪們！ <br>
                     您出錢，我出力，合作無間讓浪浪有飯吃，讚啦！</p>
             </div>
             <div class="col-lg-5 text-center">
@@ -87,7 +70,7 @@
         </div>
     </section>
     <section>
-        <div class="text-center mt-5">            
+        <div class="text-center mt-5">
             <img src="images/title01.png" class="img-fluid" alt="">
         </div>
         <div class="p-4">
@@ -107,7 +90,7 @@
             </div>
             <div class="row g-4 justify-content-center py-4 mb-0">
                 <div class="col-8 col-lg-2 text-center">
-                    <a class="btn btn-outline-blacktwo rounded-pill w-100">查看更多作品</a>                    
+                    <a class="btn btn-outline-blacktwo rounded-pill w-100">查看更多作品</a>
                 </div>
                 <div class="col-lg-2 d-none d-lg-block">
                     <a class="btn btn-yellowtwo rounded-pill w-100">客製毛孩似顏繪</a>

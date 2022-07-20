@@ -50,6 +50,7 @@ $yellowtwo:    #F9C745 !default;
 $blacktwo:    #3A3A3A !default;
 $bluetwo:    #CED4DA !default;
 $redtwo:    #C6C6C6 !default;
+$greentwo: #698669 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -95,6 +96,7 @@ $theme-colors: (
   "blacktwo": $blacktwo,
   "bluetwo": $bluetwo,
   "redtwo": $redtwo,
+  "green": $greentwo
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -1145,8 +1147,10 @@ $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .55) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
+//$navbar-light-hover-color:          rgba($black, .7) !default;
+//$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-hover-color:          $yellowtwo !default;
+$navbar-light-active-color:         $yellowtwo !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
