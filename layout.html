@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap sass -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header class="header d-flex p-2 p-lg-3 border-bottom align-items-center">
+        <div class="logo px-lg-3"><a href="#"><img src="images/logo.png" class="img-fluid" alt=""></a></div>        
+        <ul class="nav nav-pills ms-auto me-5 text-dark d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">服務介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">設計作品</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">領養專區</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
+            </li>
+        </ul>        
+        <div class="fs-3 ms-auto d-block d-lg-none">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="bi bi-list text-dark"></i>
+            </a>
+        </div>  
+        <!-- 手機板導覽列 -->
+        <div class="offcanvas offcanvas-end" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">            
+                <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">服務介紹</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">設計作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">領養專區</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-yellowtwo rounded-pill px-5" href="#">毛孩似顏繪</a>
+                    </li>
+                </ul>
+            </div>
+        </div>      
+    </header>
+    <section>
+        <!-- 主要內容區 -->
+        <br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <footer class="footer border-top border-yellowtwo border-2">
+        <div class="container-fluid">
+            <div class="row justify-content-center py-4 g-4">
+                <div class="col-lg-4 p-4">
+                    <div class="row text-center text-lg-start g-4">
+                        <div class="col-lg-6">
+                            <img src="images/link01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-blacktwo mb-2">加入奴才團隊</h3>
+                                <small class="text-blacktwo mb-2">我也會畫畫，希望能盡一份心力！</small>
+                                <a href="#" class="btn btn-outline-blacktwo">聯絡我們</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <div class="row text-center text-lg-start g-4">
+                        <div class="col-lg-6">
+                            <img src="images/link02.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-blacktwo mb-2">加入奴才團隊</h3>
+                                <small class="text-blacktwo mb-2">我也會畫畫，希望能盡一份心力！</small>
+                                <a href="#" class="btn btn-outline-blacktwo">領養專區</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="p-3 text-center bg-blacktwo text-white">
+            <p class="fs-6 mb-0">Copyright © 2021 撿到寶.All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
