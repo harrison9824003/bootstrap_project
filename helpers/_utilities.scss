@@ -60,6 +60,7 @@ $utilities: map-merge(
         null: $box-shadow,
         sm: $box-shadow-sm,
         lg: $box-shadow-lg,
+        //ud: $box-shadow-under,
         none: none,
       )
     ),
@@ -150,6 +151,7 @@ $utilities: map-merge(
     // scss-docs-start utils-sizing
     "width": (
       property: width,
+      responsive: true,
       class: w,
       values: (
         25: 25%,

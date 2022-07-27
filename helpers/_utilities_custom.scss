@@ -1,3 +1,35 @@
 .font-kalam {
     font-family: 'Kalam', cursive;
 }
+
+.custom-btn-hover:hover {
+    box-shadow: 0px 3px 0px #3A3A3A;
+}
+
+.tooltips-bottom:before {
+    border-color: black transparent transparent; 
+    border-style: solid; 
+    border-width: 10px;
+    
+    content: "";
+    height: 0px;
+    width: 0px;
+
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 10px);
+}
+
+.tooltips-bottom:after {
+    border-color: #fff transparent transparent; 
+    border-style: solid; 
+    border-width: 8px;
+    
+    content: "";
+    height: 0px;
+    width: 0px;
+
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 8px);
+}

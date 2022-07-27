@@ -1,4 +1,40 @@
 body,html {
     //font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans TC', sans-serif;
+    background: transparent url('../images/lightpaperfibers.png') 0% 0% repeat padding-box;
+}
+
+.draw-block {
+    width: 164px;
+    height: 207px;
+    cursor: pointer;
+}
+
+.draw-block:hover img{
+    content: url(../images/btn2.png);
+}
+
+.btn-outline-test {
+    @include button-outline-variant($blacktwo, $blacktwo, $yellowtwo, $yellowtwo, $yellowtwo);
+}
+
+.sidebar-links:hover, .sidebar-links > a.active {
+    color: $yellowtwo;
+}
+
+@include media-breakpoint-up(lg) {
+    .sidebar-links:hover a:before, .sidebar-links > a.active:before {   
+        content: '- ';      
+    }
+} 
+
+.card-img-overlay {
+    opacity: 0;    
+    background-color: rgba($color: $dark, $alpha: .5);
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s; 
 }

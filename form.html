@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap sass -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-3" href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-lg-5 text-center text-lg-start">
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="service.html">服務介紹</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="designer.html">設計作品</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="nav-link" href="adoption.html">領養專區</a>
+                </li>
+                <li class="nav-item mx-lg-3">
+                    <a class="btn btn-yellowtwo rounded-pill px-5 custom-btn-hover" href="form.html">毛孩似顏繪</a>
+                </li>         
+            </ul>                     
+          </div>
+        </div>
+        <div class="draw-block position-fixed bottom-0 end-0 me-5 d-none d-lg-block">
+            <div class="border border-blacktwo border-2 bg-white rounded text-center p-1 position-relative mb-2 tooltips-bottom">
+                客製我的毛孩圖
+            </div>
+            <div>
+                <img src="images/btn.png" class="img-fluid px-2 position-absolute bottom-0" alt="">
+            </div>
+        </div>
+    </nav> 
+    <header>
+        <picture class="position-relative">
+            <source media="(min-width: 576px)" srcset="images/banner.png">
+            <img src="images/banner_service-sm.png" class="img-fluid w-100" alt="">
+            <p class="font-kalam position-absolute top-0 start-50 translate-middle display-3 text-sw-2 text-sc-white text-green d-none d-lg-block">Full of fur. Full of love</p>
+        </picture>        
+    </header>
+    <section class="container">
+        <!-- 主要內容區 -->
+        <div class="w-lg-75 mx-auto bg-white rounded-2 border-top border-yellowtwo border-4 mb-4 p-3 shadow-sm">
+            <h3 class="h4 fw-bold mb-4 text-center text-blacktwo">填寫訂購資訊</h3>
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">名子</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">姓氏</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">手機號碼</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">電子郵件</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </div>
+                </div>
+
+                <label for="exampleFormControlInput1" class="form-label text-blacktwo">收件地址</label>
+                <div class="row g-2">
+                    <div class="col-lg-6">                        
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>請選擇縣市</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>請選擇區域</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">                            
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="請輸入詳細地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">   
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">選擇設計師風格</label>                         
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Meili</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">   
+                            <label for="exampleFormControlInput1" class="form-label text-blacktwo">付款方式</label>                         
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>貨到付款</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">   
+                            <p for="exampleFormControlInput1" class="form-label text-blacktwo">加購服務</p>                         
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">送禮用包裝+100</label>
+                            </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">無框畫+250</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">   
+                            <label for="exampleFormControlTextarea1" class="form-label">備註說明</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="h4 fw-bold mt-5">總金額 NT$ <span>300</span></p>
+                    <button type="submit" class="btn btn-yellowtwo rounded-3 px-5 mt-3 mb-5">送出訂購資訊</button>
+                </div>                
+            </form>
+        </div>
+    </section>
+    <footer class="footer border-top border-yellowtwo border-2 bg-white">
+        <div class="container-fluid">
+            <div class="row justify-content-center py-4 g-4">
+                <div class="col-lg-4 p-4">
+                    <div class="row text-center text-lg-start g-4">
+                        <div class="col-lg-6">
+                            <img src="images/link01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-blacktwo mb-2">加入奴才團隊</h3>
+                                <small class="text-blacktwo mb-2">我也會畫畫，希望能盡一份心力！</small>
+                                <a href="form.html" class="btn btn-outline-test w-75 mx-auto ms-lg-0 rounded-pill">聯絡我們</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <div class="row text-center text-lg-start g-4">
+                        <div class="col-lg-6">
+                            <img src="images/link02.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column">
+                                <h3 class="text-blacktwo mb-2">加入奴才團隊</h3>
+                                <small class="text-blacktwo mb-2">我也會畫畫，希望能盡一份心力！</small>
+                                <a href="adoption.html" class="btn btn-outline-test w-75 mx-auto ms-lg-0 rounded-pill">領養專區</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="p-3 text-center bg-blacktwo text-white">
+            <p class="fs-6 mb-0">Copyright © 2021 撿到寶.All rights reserved.</p>
+        </div>
+    </footer>  
+
+    
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>
